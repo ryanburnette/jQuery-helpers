@@ -1,5 +1,9 @@
 # jQuery-helpers
 
+I've started to notice lately that I'm writing or searching out certain jQuery methods
+on Stack Overflow over and over again. I'm going to try to compile a bundle of useful
+patterns that I use a lot with jQuery here so I can grab them as a Bower package when I need them.
+
 ## Conventional Arguments
 
 `$el` means you're passing one element. Usually `$el.eq(0)` will be called to make sure we're working with just one.
