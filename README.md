@@ -25,3 +25,6 @@ helpers.getFloatedRows($('ul li')).forEach(function ($row) {
   console.log('this is a jQuery object', $row, 'but the array it came from was not');
 });
 ```
+
+### `hdpi()`
+Returns true if the device pixel ratio is higher than 1.
