@@ -33,3 +33,7 @@ helpers.getFloatedRows = function ($els) {
 
   return rows;
 };
+
+helpers.hdpi = function () {
+  return window.devicePixelRatio > 1;
+};
