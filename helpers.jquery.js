@@ -37,3 +37,7 @@ helpers.getFloatedRows = function ($els) {
 helpers.hdpi = function () {
   return window.devicePixelRatio > 1;
 };
+
+helpers.firefox = function () {
+  return navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+};
