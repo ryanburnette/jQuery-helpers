@@ -38,6 +38,20 @@ helpers.hdpi = function () {
   return window.devicePixelRatio > 1;
 };
 
+helpers.chrome = function () {
+  return navigator.userAgent.indexOf('Chrome') > -1;
+};
+helpers.ie = function () {
+  return navigator.userAgent.indexOf('MSIE') > -1;
+};
 helpers.firefox = function () {
-  return navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+  return navigator.userAgent.indexOf('Firefox') > -1;
+};
+helpers.safari = function () {
+  if ( navigator.userAgent.indexOf("Safari") > -1 && !helpers.chrome() ) {
+    return true;
+  }
+};
+helpers.opera = function () {
+  return navigator.userAgent.indexOf("Presto") > -1;
 };
