@@ -83,7 +83,7 @@ helpers.parseQueryParams = function (str) {
     ;
 
   pairs.forEach(function (pair) {
-    var pair = pairs[i].split('=');
+    pair = pair.split('=');
     params[pair[0]] = pair[1];
   });
   return params;
