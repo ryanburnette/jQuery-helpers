@@ -76,3 +76,15 @@ helpers.rgb2hex = function (rgb) {
   }
   return "#" + hex(rgb[1]) + hex(rgb[2]) + hex(rgb[3]);
 };
+
+helpers.parseQueryParams = function (str) {
+  var pairs = str.split('&');
+    , params = {}
+    ;
+
+  pairs.forEach(function (pair) {
+    var pair = pairs[i].split('=');
+    params[pair[0]] = pair[1];
+  });
+  return params;
+};
